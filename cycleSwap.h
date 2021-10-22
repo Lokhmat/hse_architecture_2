@@ -7,15 +7,20 @@
 
 using namespace std;
 
-// cycleSwap structure.
-class CycleSwap: public Cipher {
+//------------------------------------------------------------------------------
+// cycleSwap.h - Implements Caesar cipher(inherited from cipher).
+//------------------------------------------------------------------------------
+class CycleSwap : public Cipher {
 public:
     virtual ~CycleSwap() {}
-    // Ввод параметров прямоугольника из файла
+
+    // Input cipher from stream.
     virtual void In(ifstream &ifst);
-    // Случайный ввод параметров прямоугольника
+
+    // Random generating of CycleSwap cipher
     virtual void InRnd();
-    // Вывод параметров прямоугольника в форматируемый поток
+
+    // Outputting CycleSwap to stream.
     virtual void Out(ofstream &ofst);
 
 

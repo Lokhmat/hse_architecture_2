@@ -1,22 +1,17 @@
 #include <cstdlib>
-#include <fstream>
 #include <set>
-#include <iostream>
-// Inputting cipher.
 #include "numberSwap.h"
 #include "cycleSwap.h"
 #include "pointerSwap.h"
-//------------------------------------------------------------------------------
-Random Cipher::rnd20(1, 20);
-Random Cipher::rnd3(1,3);
 
-//------------------------------------------------------------------------------
-// Ввод параметров обобщенного шифра из файла
-Cipher* Cipher::StaticIn(ifstream &ifst) {
+Random Cipher::rnd3(1, 3);
+
+// Input of cipher from specifies stream.
+Cipher *Cipher::StaticIn(ifstream &ifst) {
     int k = 0;
     ifst >> k;
     Cipher *sp = nullptr;
-    switch(k) {
+    switch (k) {
         case 1:
             sp = new CycleSwap;
             break;
@@ -33,11 +28,11 @@ Cipher* Cipher::StaticIn(ifstream &ifst) {
     return sp;
 }
 
-// Случайный ввод обобщенной фигуры
+// Random input of cipher.
 Cipher *Cipher::StaticInRnd() {
     auto k = Cipher::rnd3.Get();
-    Cipher* sp = nullptr;
-    switch(k) {
+    Cipher *sp = nullptr;
+    switch (k) {
         case 1:
             sp = new CycleSwap;
             break;
@@ -53,8 +48,7 @@ Cipher *Cipher::StaticInRnd() {
 }
 
 
-
-// Count punctuation signs in char[].
+// Count sum of codes in string.
 int Cipher::countSum(string line) {
     int count = 0;
     for (int i = 0; i < line.length(); i++) {
@@ -64,16 +58,17 @@ int Cipher::countSum(string line) {
 }
 
 // Comparable value of cipher.
-double Cipher::getComparable(Cipher* r) {
+double Cipher::getComparable(Cipher *r) {
     int len = r->decryptedScript.length();
     int sum = countSum(r->decryptedScript);
     if (len == 0) {
         return 1;
     }
-    return (double)sum / len;
+    return (double) sum / len;
 
 }
 
+// Generate random string as open string of cipher.
 void Cipher::generateRndDecrypted() {
     decryptedScript = "";
     for (int i = 0; i < rand() % 10000; i++) {

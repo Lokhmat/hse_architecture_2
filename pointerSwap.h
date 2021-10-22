@@ -4,24 +4,30 @@
 
 #include <fstream>
 #include "cipher.h"
+
 using namespace std;
-// pointerSwap structure.
-class PointerSwap: public Cipher {
+
+//------------------------------------------------------------------------------
+// pointerSwap.h - Class implements letter to letter cipher. Inherited from cipher.
+//------------------------------------------------------------------------------
+class PointerSwap : public Cipher {
 public:
     virtual ~PointerSwap() {}
-    // Inputting pointerSwap.
+
+    // Inputting pointerSwap from stream.
     virtual void In(ifstream &stream);
-    // Creating pointerSwap.
+
+    // Generating random pointerSwap.
     virtual void InRnd();
-    // Outputting random pointerSwap.
+
+    // Outputting pointerSwap to stream.
     virtual void Out(ofstream &stream);
+
 private:
     string encryptedScrypt;
-    std::pair<char, char> table[26];
+    // Pairs of exchanging symbols.
+    pair<char, char> table[26];
 };
-
-
-
 
 
 #endif // __pointerSwap__

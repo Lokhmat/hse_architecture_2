@@ -3,32 +3,43 @@
 
 #include "rnd.h"
 #include "string"
+
 using namespace std;
 
 
-// Cipher class.
+//------------------------------------------------------------------------------
+// cipher.h - Implements abstract cipher as base class for others.
+//------------------------------------------------------------------------------
 class Cipher {
 protected:
-    static Random rnd20;
     static Random rnd3;
 public:
     string decryptedScript;
+
     virtual ~Cipher() {};
-    // Ввод обобщенной фигуры
+
+    // Input of abstract cipher.
     static Cipher *StaticIn(ifstream &ifdt);
-    // Ввод обобщенной фигуры
+
+    // Input of cipher.
     virtual void In(ifstream &ifdt) = 0;
-    // Случайный ввод обобщенной фигуры
+
+    // Generate random abstract cipher.
     static Cipher *StaticInRnd();
-    // Виртуальный метод ввода случайной фигуры
+
+    // Generate random cipher.
     virtual void InRnd() = 0;
-    // Вывод обобщенной фигуры
+
+    // Output cipher.
     virtual void Out(ofstream &ofst) = 0;
+
     // Comparable value of Cipher.
-    static double getComparable(Cipher* r);
-    // Generate random decrypted string
+    static double getComparable(Cipher *r);
+
+    // Generate random decrypted string.
     void generateRndDecrypted();
-    // Count sum of codes in a string
+
+    // Count sum of codes in a string.
     static int countSum(string line);
 };
 

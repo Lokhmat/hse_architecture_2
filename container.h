@@ -1,32 +1,35 @@
 #ifndef __container__
 #define __container__
 
+#include "cipher.h"
+
 //------------------------------------------------------------------------------
 // container.h - contains data type,
 // describes normal data container
 //------------------------------------------------------------------------------
-
-#include "cipher.h"
-
-//------------------------------------------------------------------------------
-// ПSimple container with usual array
 class Container {
 public:
     Container(int s);
+
     ~Container();
 
-    // Ввод содержимого контейнера из указанного потока
+    // Input from specified stream.
     void In(ifstream &ifst);
-    // Случайный ввод содержимого контейнера
+
+    // Generate container and fill it randomly.
     void InRnd(int size);
-    // Вывод содержимого контейнера в указанный поток
+
+    // Print container to a specified stream.
     void Out(ofstream &ofst);
-    // Вычисление суммы периметров всех фигур в контейнере
+
+    // Sort container according to the task.
     void CocktailSort();
+
 private:
-    void Clear();    // Очистка контейнера от данных
-    int len; // текущая длина
-    Cipher** storage;
+    void Clear();    // Clear container data.
+    int len; // Current length.
+    Cipher **storage;
     int size;
 };
+
 #endif

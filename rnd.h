@@ -5,7 +5,7 @@
 #include <ctime>   // для функции time()
 
 //------------------------------------------------------------------------------
-// rnd.h - содержит генератор случайных чисел в диапазоне от 1 до 20
+// rnd.h - Random number generator in specified range.
 //------------------------------------------------------------------------------
 
 class Random {
@@ -18,10 +18,10 @@ public:
             first = l;
             last = f;
         }
-        // системные часы в качестве инициализатора
+        // System clock as initializer
         srand(static_cast<unsigned int>(time(0)));
     }
-    // Генерация случайного числа в заданном диапазоне
+    // Generating random number in range first last
     int Get() {
         return rand() % (last - first + 1) + first;
     }
