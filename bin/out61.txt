@@ -1,0 +1,125 @@
+Filled container:
+Container contains 4 elements.
+0: NumberSwap: 
+Decrypted: udgqkrycjmcmgyohcbiirlfcqkrklgnwqdkurnnjrvahcvrugmajszlowkwaxoozkpkrstzdznmysmccvfpffkeqsbwnbaondkxyjfnfdpzwcqyspqsqpfqgazshb
+Encrypted: 167 736 393 500 128 769 57 926 612 637 926 637 393 57 584 962 926 531 235 235 769 593 531 926 500 128 769 128 593 393 455 879 500 736 128 167 769 455 455 612 769 64 216 962 926 64 769 167 393 637 216 612 378 197 593 584 879 128 879 216 326 584 584 197 128 328 128 769 378 444 197 736 197 455 637 57 378 637 926 926 64 531 328 531 531 128 351 500 378 531 879 455 531 216 584 455 736 128 326 57 612 531 455 531 736 328 197 879 926 500 57 378 328 500 378 500 328 531 500 393 216 197 378 962 531 
+Table of intersection of symbols
+a 216
+b 531
+c 926
+d 736
+e 351
+f 531
+g 393
+h 962
+i 235
+j 612
+k 128
+l 593
+m 637
+n 455
+o 584
+p 328
+q 500
+r 769
+s 378
+t 444
+u 167
+v 64
+w 879
+x 326
+y 57
+z 197
+Comparable value: 109.296
+1: NumberSwap: 
+Decrypted: jxnndaxfyzfettwswqdnrczs
+Encrypted: 29 369 590 590 604 752 369 266 69 910 266 505 430 430 503 466 503 444 604 590 197 336 910 466 
+Table of intersection of symbols
+a 752
+b 749
+c 336
+d 604
+e 505
+f 266
+g 747
+h 948
+i 323
+j 29
+k 153
+l 342
+m 995
+n 590
+o 943
+p 35
+q 444
+r 197
+s 466
+t 430
+u 577
+v 405
+w 503
+x 369
+y 69
+z 910
+Comparable value: 111.208
+2: NumberSwap: 
+Decrypted: jbkelewvtbserhpvbotlfkjtjpittolgpjlsszelxzmgqbogowqwdvdvahhfcvhxcdamgqvooepbxiovuwwtqtgtxmougoiayakpagadghevcqhbyfxpztmuyedcbykriiwjwdiejhevxolbctubyatzxyihfuersjrjlqmwxklucfg
+Encrypted: 281 41 723 680 503 680 551 499 296 41 620 680 219 731 554 499 41 361 296 503 474 723 281 296 281 554 901 296 296 361 503 767 554 281 503 620 620 663 680 503 196 663 115 767 939 41 361 767 361 551 939 551 560 499 560 499 355 731 731 474 2 499 731 196 2 560 355 115 767 939 499 361 361 680 554 41 196 901 361 499 761 551 551 296 939 296 767 296 196 115 361 761 767 361 901 355 198 355 723 554 355 767 355 560 767 731 680 499 2 939 731 41 198 474 196 554 663 296 115 761 198 680 560 2 41 198 723 219 901 901 551 281 551 560 901 680 281 731 680 499 196 361 503 41 2 296 761 41 198 355 296 663 196 198 901 731 474 761 680 219 620 281 219 281 503 939 115 551 196 723 503 761 2 474 767 
+Table of intersection of symbols
+a 355
+b 41
+c 2
+d 560
+e 680
+f 474
+g 767
+h 731
+i 901
+j 281
+k 723
+l 503
+m 115
+n 226
+o 361
+p 554
+q 939
+r 219
+s 620
+t 296
+u 761
+v 499
+w 551
+x 196
+y 198
+z 663
+Comparable value: 109.16
+3: PointerSwap: 
+Decrypted: ewubwrvsfefawgokkiyurklkqjwbxooftwrwvdjorpinqattxfzzdlifewonxkqdjghlwzdqpgsgizxurxshermsqzzvluxttvmtcdewxeuiaenmtvydfvawobfgjwwbijwwnfoi
+Encrypted: jpudpihgwjwrpatccfquicecykpdxttwspiphzktilfoyrssxwnnzefwjptoxcyzkamepnzylagafnxuixgmjibgynnheuxsshbsvzjpxjufrjobshqzwhrptdwakppdfkppowtf
+a r
+b d
+c v
+d z
+e j
+f w
+g a
+h m
+i f
+j k
+k c
+l e
+m b
+n o
+o t
+p l
+q y
+r i
+s g
+t s
+u u
+v h
+w p
+x x
+y q
+z n
+Comparable value: 110.434

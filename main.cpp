@@ -8,6 +8,7 @@
 #include <cstring>
 #include <stdio.h>
 #include "container.h"
+#include <iostream>
 
 void errMessage1() {
     printf("incorrect command line!\n"
@@ -33,22 +34,28 @@ int main(int argc, char *argv[]) {
     }
 
     printf("Start\n");
-    Container *c = new Container(10000);
 
-    if (!strcmp(argv[1], "-f")) {
-        std::ifstream stream(argv[2]);
-        c->In(stream);
-    } else if (!strcmp(argv[1], "-n")) {
-        int size = atoi(argv[2]);
-        if ((size < 1) || (size > 10000)) {
-            printf("incorrect number of objects = %d. Set 0 < number <= 10000\n", size);
-            return 3;
+    Container *c = new Container(10000);
+    try {
+        if (!strcmp(argv[1], "-f")) {
+            std::ifstream stream(argv[2]);
+            c->In(stream);
+        } else if (!strcmp(argv[1], "-n")) {
+            int size = atoi(argv[2]);
+            if ((size < 1) || (size > 10000)) {
+                printf("incorrect number of objects = %d. Set 0 < number <= 10000\n", size);
+                return 3;
+            }
+            // Random container generation.
+            c->InRnd(size);
+        } else {
+            errMessage2();
+            return 2;
         }
-        // Random container generation.
-        c->InRnd(size);
-    } else {
-        errMessage2();
-        return 2;
+    }
+    catch (std::exception e) {
+        std::cout << e.what();
+        return 3;
     }
 
     // Container output to file.

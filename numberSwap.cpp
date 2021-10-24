@@ -34,7 +34,7 @@ void NumberSwap::InRnd() {
 
 // Outputting numberSwap to specified stream.
 void NumberSwap::Out(ofstream &stream) {
-    stream << "PointerSwap: \n" << "Decrypted: " << decryptedScript << "\n" << "Encrypted: ";
+    stream << "NumberSwap: \n" << "Decrypted: " << decryptedScript << "\n" << "Encrypted: ";
     for (int i = 0; encryptedScript[i] != 0; i++) {
         stream << encryptedScript[i] << " ";
     }

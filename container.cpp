@@ -1,6 +1,9 @@
 #include "container.h"
 #include <fstream>
+#include <iostream>
 
+
+using namespace std;
 
 // Constructor of container.
 Container::Container(int s) {
@@ -28,6 +31,10 @@ void Container::In(ifstream &ifst) {
     while (!ifst.eof()) {
         if ((storage[len] = Cipher::StaticIn(ifst)) != nullptr) {
             len++;
+        } else {
+            cout << "Your input file is not in correct format(or empty) check it please\n"
+            << "Output could or could not be correct \n"<< "Stopping program... \n";
+            return;
         }
     }
 }

@@ -25,7 +25,7 @@ void CycleSwap::InRnd() {
 
 // Outputting cycleSwap to stream.
 void CycleSwap::Out(ofstream &stream) {
-    stream << "PointerSwap: \n" << "Decrypted: " << decryptedScript << "\n"
+    stream << "CycleSwap: \n" << "Decrypted: " << decryptedScript << "\n"
            << "Encrypted: " << encryptedScript << "\n" << "N = " << n << "\n";
     stream << "Comparable value: " << Cipher::getComparable(this) << "\n";
 }

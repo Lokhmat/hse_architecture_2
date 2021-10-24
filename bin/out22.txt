@@ -1,6 +1,6 @@
 Sorted container:
 Container contains 3 elements.
-0: PointerSwap: 
+0: NumberSwap: 
 Decrypted: ab
 Encrypted: 123 734 
 Table of intersection of symbols
@@ -30,7 +30,8 @@ w 671
 x 18
 y 657
 z 997
-1: PointerSwap: 
+Comparable value: 97.5
+1: NumberSwap: 
 Decrypted: abc
 Encrypted: 753 883 343 
 Table of intersection of symbols
@@ -60,6 +61,7 @@ w 671
 x 18
 y 657
 z 997
+Comparable value: 98
 2: PointerSwap: 
 Decrypted: bcc
 Encrypted: raa
@@ -89,3 +91,4 @@ w o
 x x
 y p
 z v
+Comparable value: 98.6667
