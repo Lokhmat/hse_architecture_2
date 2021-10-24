@@ -54,31 +54,3 @@ w 671
 x 18
 y 657
 z 997
-3
-bcc
-a g
-b r
-c a
-d h
-e n
-f d
-g c
-h f
-i y
-j t
-k i
-l k
-m s
-n b
-o l
-p q
-q e
-r m
-s w
-t z
-u u
-v j
-w o
-x x
-y p
-z v

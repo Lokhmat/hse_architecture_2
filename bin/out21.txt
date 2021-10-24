@@ -1,5 +1,5 @@
 Filled container:
-Container contains 3 elements.
+Container contains 2 elements.
 0: NumberSwap: 
 Decrypted: abc
 Encrypted: 753 883 343 
@@ -62,33 +62,3 @@ x 18
 y 657
 z 997
 Comparable value: 97.5
-2: PointerSwap: 
-Decrypted: bcc
-Encrypted: raa
-a g
-b r
-c a
-d h
-e n
-f d
-g c
-h f
-i y
-j t
-k i
-l k
-m s
-n b
-o l
-p q
-q e
-r m
-s w
-t z
-u u
-v j
-w o
-x x
-y p
-z v
-Comparable value: 98.6667
